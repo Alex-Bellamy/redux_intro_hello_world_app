@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { Component } from 'react';
 
-const App = (props) => {
+class App extends Component {
+  state = {
+    message: "hello World from Component state"
+  }
+
+  render() {
   return (
     <>
-      <h1>{props.message}</h1>
+      <h1>{this.state.message}</h1>
     </>
   )
 }
+}
 
-export default App;
+export default App
